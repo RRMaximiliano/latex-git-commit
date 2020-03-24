@@ -1,0 +1,1 @@
+latex-git-commit
