@@ -1,97 +1,281 @@
-########################################################################
-#
-# .gitignore DIME template
-# https://github.com/worldbank/DIMEwiki/tree/master/Topics/GitHub
-#
-# We recommend that you create a .gitignore file using GitHub's tools and
-# replace the content of that file with the content of this file. Otherwise
-# you have to rename this file .gitignore. But if you rename the fine in a
-# regular folder window PCs and Macs are likely to keep the file extension
-# so that the file ends up being names .gitignore.txt. Code editors like, Atom,
-# can edit the file extension, but if you are not familiar with how to do that,
-# we recommend that you generate an ignore file using GitHub and simply replace
-# the content of that file.
-#
-# Note that if you are using GitKraken you need to use version 5.x or more
-# recent for this template to work properly
-#
-########################################################################
+## Core latex/pdflatex auxiliary files:
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
 
-#######################
-# Start by ignoring everything, and below we are explicitly saying
-# what to not ignore
-*
+## Intermediate documents:
+*.dvi
+*.xdv
+*-converted-to.*
+# these rules might exclude image files for figures etc.
+# *.ps
+# *.eps
+# *.pdf
 
-#######################
-# List of files with GitHub functionality anywhere in the repo
-# that we do not want to ignore
+## Generated if empty string is given at "Please type another file name for output:"
+.pdf
 
-# These files include GitHub settings
-!.gitignore
-!.gitattributes
+## Bibliography auxiliary files (bibtex/biblatex/biber):
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
 
-# Keep markdown files used for documentation on GitHub
-!README.md
-!CONTRIBUTING.md
+## Build tool auxiliary files:
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
 
-# Keep documentation files for GitHub Sites
-!/**/*.yml
+## Build tool directories for auxiliary files
+# latexrun
+latex.out/
 
-#######################
-# For performance reasons, if a folder is already ignored, then
-# GitHub does not check the content for that folder for matches
-# with additional rules. The line below includes folder in the
-# top folder (but not their content), so that anything matching
-# the rules below will still not be ignored.
-!*/
+## Auxiliary and intermediate files from other packages:
+# algorithms
+*.alg
+*.loa
 
-#######################
-# The following file types are code that should always be
-# included no matter where in the repository folder they are
-# located unless you explicitly ignore that folder
+# achemso
+acs-*.bib
 
-# Stata
-!/**/*.do
-!/**/*.ado
+# amsthm
+*.thm
 
-# More
-!/**/*.sh
-!/**/*.bib
+# beamer
+*.nav
+*.pre
+*.snm
+*.vrb
 
-# R
-!/**/*.R
+# changes
+*.soc
 
-# LaTeX
-!/**/*.tex
-!/**/*.cls
-!/**/*.def
+# comment
+*.cut
 
-# Python
-!/**/*.py
+# cprotect
+*.cpt
 
-# Matlab
-!/**/*.m
+# elsarticle (documentclass of Elsevier journals)
+*.spl
 
-# Markdown
-!/**/*.md
+# endnotes
+*.ent
 
-#######################
-# Include some additional file formats in any output folder. You might have
-# to change the name of the Output folder to whatever it is called in your
-# project, but we strongly recommend that you only include these files in
-# a subset of the folders where you are certain no private data is ever stored.
-!/**/Output/**/*.txt
-!/**/Output/**/*.csv
-!/**/Output/**/*.xml
-!/**/Output/**/*.eps
-!/**/Output/**/*.svg
+# fixme
+*.lox
 
-#######################
-# Include all the files with passwords or tokens here. All files named
-# password or passwords are with this template ignored no matter which
-# format you are using. Additionally, all content in any folder called
-# password or passwords are also ignored. NOTE that your project might be
-# using different names and then you must edit the lines below accordingly.
-password.*
-passwords.*
-password/
+# feynmf/feynmp
+*.mf
+*.mp
+*.t[1-9]
+*.t[1-9][0-9]
+*.tfm
+
+#(r)(e)ledmac/(r)(e)ledpar
+*.end
+*.?end
+*.[1-9]
+*.[1-9][0-9]
+*.[1-9][0-9][0-9]
+*.[1-9]R
+*.[1-9][0-9]R
+*.[1-9][0-9][0-9]R
+*.eledsec[1-9]
+*.eledsec[1-9]R
+*.eledsec[1-9][0-9]
+*.eledsec[1-9][0-9]R
+*.eledsec[1-9][0-9][0-9]
+*.eledsec[1-9][0-9][0-9]R
+
+# glossaries
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.lzo
+*.lzs
+
+# uncomment this for glossaries-extra (will ignore makeindex's style files!)
+# *.ist
+
+# gnuplottex
+*-gnuplottex-*
+
+# gregoriotex
+*.gaux
+*.gtex
+
+# htlatex
+*.4ct
+*.4tc
+*.idv
+*.lg
+*.trc
+*.xref
+
+# hyperref
+*.brf
+
+# knitr
+*-concordance.tex
+# TODO Uncomment the next line if you use knitr and want to ignore its generated tikz files
+# *.tikz
+*-tikzDictionary
+
+# listings
+*.lol
+
+# luatexja-ruby
+*.ltjruby
+
+# makeidx
+*.idx
+*.ilg
+*.ind
+
+# minitoc
+*.maf
+*.mlf
+*.mlt
+*.mtc[0-9]*
+*.slf[0-9]*
+*.slt[0-9]*
+*.stc[0-9]*
+
+# minted
+_minted*
+*.pyg
+
+# morewrites
+*.mw
+
+# nomencl
+*.nlg
+*.nlo
+*.nls
+
+# pax
+*.pax
+
+# pdfpcnotes
+*.pdfpc
+
+# sagetex
+*.sagetex.sage
+*.sagetex.py
+*.sagetex.scmd
+
+# scrwfile
+*.wrt
+
+# sympy
+*.sout
+*.sympy
+sympy-plots-for-*.tex/
+
+# pdfcomment
+*.upa
+*.upb
+
+# pythontex
+*.pytxcode
+pythontex-files-*/
+
+# tcolorbox
+*.listing
+
+# thmtools
+*.loe
+
+# TikZ & PGF
+*.dpth
+*.md5
+*.auxlock
+
+# todonotes
+*.tdo
+
+# vhistory
+*.hst
+*.ver
+
+# easy-todo
+*.lod
+
+# xcolor
+*.xcp
+
+# xmpincl
+*.xmpi
+
+# xindy
+*.xdy
+
+# xypic precompiled matrices and outlines
+*.xyc
+*.xyd
+
+# endfloat
+*.ttt
+*.fff
+
+# Latexian
+TSWLatexianTemp*
+
+## Editors:
+# WinEdt
+*.bak
+*.sav
+
+# Texpad
+.texpadtmp
+
+# LyX
+*.lyx~
+
+# Kile
+*.backup
+
+# gummi
+.*.swp
+
+# KBibTeX
+*~[0-9]*
+
+# TeXnicCenter
+*.tps
+
+# auto folder when using emacs and auctex
+./auto/*
+*.el
+
+# expex forward references with \gathertags
+*-tags.tex
+
+# standalone packages
+*.sta
+
+# Makeindex log files
+*.lpz
+
+# REVTeX puts footnotes in the bibliography by default, unless the nofootinbib
+# option is specified. Footnotes are the stored in a file with suffix Notes.bib.
+# Uncomment the next line to have this generated file ignored.
+#*Notes.bib
